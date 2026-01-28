@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- title and logo -->
+        <title>English Janala</title>
+        <link
+            rel="shortcut icon"
+            href="./assets/logo.png"
+            type="image/x-icon"
+        />
+
+        <!-- font awesome cdn -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- tailwind and daisyui cdn -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/daisyui@5"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+        <!-- poppins font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- hind siliguri font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- custom css -->
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <!-- navbar -->
+        <header>
+            <div class="navbar bg-[#edf6ff] shadow-sm">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div
+                            tabindex="0"
+                            role="button"
+                            class="btn btn-ghost lg:hidden"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16"
+                                />
+                            </svg>
+                        </div>
+                        <ul
+                            tabindex="-1"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+                        >
+                        <li>
+                            <a href=""
+                                ><i class="fa-solid fa-circle-question"></i>
+                                FAQ</a
+                            >
+                        </li>
+                        <li>
+                            <a href=""
+                                ><i class="fa-solid fa-book-open"></i></i>
+                                Learn</a
+                            >
+                        </li>
+                        <li>
+                            <a href=""
+                                ><i class="fa-solid fa-arrow-right-from-bracket"></i></i>
+                                Logout</a
+                            >
+                        </li>
+                        </ul>
+                    </div>
+                    <a href="" class="flex items-center gap-1">
+                        <span class="font-semibold text-lg">English</span>
+                        <img src="./assets/logo.png" alt="" />
+                        <span class="font-bangla text-lg">জানালা</span>
+                    </a>
+                </div>
+                <div class="navbar-end hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 gap-2">
+                        <li>
+                            <a href="" class="btn btn-outline btn-primary"
+                                ><i class="fa-solid fa-circle-question"></i>
+                                FAQ</a
+                            >
+                        </li>
+                        <li>
+                            <a href="" class="btn btn-outline btn-primary"
+                                ><i class="fa-solid fa-book-open"></i></i>
+                                Learn</a
+                            >
+                        </li>
+                        <li>
+                            <a href="" class="btn btn-outline btn-primary"
+                                ><i class="fa-solid fa-arrow-right-from-bracket"></i></i>
+                                Logout</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- banner -->
+        <section class=" flex flex-col-reverse md:flex-row gap-10 justify-between items-center py-5 w-11/12 mx-auto mt-18">
+            <div class="content flex-1 text-center md:text-left">
+                <h2 class="text-4xl font-bold mb-8">
+                    <span class="text-sky-500">English</span> is Easy!!
+                </h2>
+                <p class="font-bangla">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
+                <div class="mt-5 flex justify-center md:justify-start">
+                    <form class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
+  <fieldset class="fieldset">
+    <label class="label">Email</label>
+    <input type="email" class="input validator" placeholder="Email" required />
+    <p class="validator-hint hidden">Required</p>
+  </fieldset>
+
+  <label class="fieldset">
+    <span class="label">Password</span>
+    <input type="password" class="input validator" placeholder="Password" required />
+    <span class="validator-hint hidden">Required</span>
+  </label>
+
+  <button class="btn btn-neutral mt-4 bg-[#422ad5] border-[#3d26c7]" type="submit">Login</button>
+  <button class="btn btn-ghost mt-1" type="reset">Reset</button>
+</form>
+                </div>
+            </div>
+            <div class="image flex-1">
+                <img src="./assets/hero-student.png" alt="">
+            </div>
+        </section>
+
+        <!-- content section -->
+        <section class="mt-10 mb-10">
+            <h2 class="text-center text-3xl font-bold my-10">
+                <span class="text-sky-500">Let's</span> Learn Vocabularies
+            </h2>
+            <div id="lesson-container" class="flex gap-5 flex-wrap justify-center">
+
+            </div>
+        </section>
+
+        <section class="flex justify-center items-center py-10 hidden" id="loading-spinner">
+            <span class="loading loading-spinner text-error"></span>
+        </section>
+
+        <section id="word-container" class="bg-[#f8f8f8] p-10 w-11/12 mx-auto my-10 grid grid-cols-3 gap-5 ">
+            <div class="text-center col-span-full rounded-xl py-10">
+                <p class="font-bangla text-sm font-normal text-[#79716b] ">আপনি এখনো কোন Lesson Select করেননি</p>
+                <h2 class="font-bangla font-medium text-3xl">একটি Lesson Select করুন।</h2>
+            </div>
+        </section>
+
+        <!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+
+    <div id="details-container"></div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+        <!-- footer  -->
+    <footer class="footer flex justify-between bg-[#edf6ff] text-black   sm:footer-horizontal  p-10">
+    <aside>
+        <a href="" class="flex items-center gap-1">
+                        <span class="font-semibold text-lg">English</span>
+                        <img src="./assets/logo.png" alt="" />
+                        <span class="font-bangla text-lg">জানালা</span>
+                    </a>
+
+    <p >
+      <span class="font-bangla font-semibold">ইংরেজি শিখুন সহজে</span>
+      <br />
+      Providing ED-Tech Applications since 2025
+    </p>
+  </aside>
+  <nav>
+    <h6 class="footer-title">Social</h6>
+    <div class="grid grid-flow-col gap-4">
+      <a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          class="fill-current">
+          <path
+            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+        </svg>
+      </a>
+      <a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          class="fill-current">
+          <path
+            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+        </svg>
+      </a>
+      <a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          class="fill-current">
+          <path
+            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+        </svg>
+      </a>
+    </div>
+  </nav>
+</footer>
+        <script src="./index.js"></script>
+    </body>
+</html>
